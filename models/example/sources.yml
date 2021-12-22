@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+- name: soda
+  schema: soda
+  tables:
+  - name: non_existing_source
+    description: "A starter dbt model"
+    columns:
+    - name: id
+      type: integer
+      tests:
+      - unique
+      - not_null
